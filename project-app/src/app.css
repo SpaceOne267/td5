@@ -1,0 +1,92 @@
+.preloader {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  z-index: 1000;
+}
+
+.preloader-deactive {
+  animation: preload 2s 1 forwards;
+}
+
+.preloader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.preloader .content .loader {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.preloader .content .loader svg {
+  width: 5vw;
+  height: auto;
+  opacity: 0.25;
+  animation: loading 2s infinite forwards;
+}
+
+.preloader .content .loader .s1 {
+  animation-delay: 0s;
+}
+
+.preloader .content .loader .s2 {
+  animation-delay: 0.25s;
+}
+
+.preloader .content .loader .s3 {
+  animation-delay: 0.5s;
+}
+
+.preloader .content .loader .s4 {
+  animation-delay: 0.75s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.25;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes preload {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
