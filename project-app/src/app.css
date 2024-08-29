@@ -1,4 +1,5 @@
 .preloader {
+  touch-action: none;
   display: flex;
   position: fixed;
   align-items: center;
