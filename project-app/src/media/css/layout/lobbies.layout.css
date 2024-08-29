@@ -34,6 +34,7 @@
 
 
 .progress-bar {
+  touch-action: none;
   display: flex;
   position: relative;
   flex-direction: column;
