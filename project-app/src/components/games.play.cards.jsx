@@ -3,7 +3,7 @@ import React from "react";
 // css
 import "../media/css/component/games.play.cards.css";
 // img
-import cardImg from "../media/img/games/cardPlayImg.svg";
+import cardImg from "../media/img/games/cardPlayImg.png";
 //
 import { useNavigate } from "react-router-dom";
 // icons
