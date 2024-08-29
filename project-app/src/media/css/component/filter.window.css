@@ -11,10 +11,10 @@
   left: 14px;
   border-radius: var(--br-medium);
   padding: 10px;
-  transform: translate(0, -80%);
-  -webkit-transform: translate(0, -80%);
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
   /* Для Safari и старых версий Chrome */
-  -ms-transform: translate(0, -80%);
+  -ms-transform: translate(0, -50%);
   /* Для IE 9 */
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -32,25 +32,25 @@
 
 @keyframes fopen {
   from {
-    transform: translate(0, -80%) scale(0.8);
-    -webkit-transform: translate(0, -80%) scale(0.8);
+    transform: translate(0, -50%) scale(0.8);
+    -webkit-transform: translate(0, -50%) scale(0.8);
     /* Для Safari и старых версий Chrome */
   }
 
   to {
-    transform: translate(0, -80%) scale(1);
-    -webkit-transform: translate(0, -80%) scale(1);
+    transform: translate(0, -50%) scale(1);
+    -webkit-transform: translate(0, -50%) scale(1);
     /* Для Safari и старых версий Chrome */
   }
 }
 
 @-webkit-keyframes fopen {
   from {
-    -webkit-transform: translate(0, -80%) scale(0.8);
+    -webkit-transform: translate(0, -50%) scale(0.8);
   }
 
   to {
-    -webkit-transform: translate(0, -80%) scale(1);
+    -webkit-transform: translate(0, -50%) scale(1);
   }
 }
 
