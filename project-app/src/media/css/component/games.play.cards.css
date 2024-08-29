@@ -39,9 +39,8 @@
 .play_cards .card .cardImg {
   display: block;
   position: absolute;
-  height: 100%;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 
 .play_cards .card_quick {
