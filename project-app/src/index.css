@@ -73,15 +73,33 @@ code {
 html,
 body {
   width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
   font-family: "NATS", sans-serif;
+  position: relative;
   font-weight: 400;
   margin: 0;
   padding: 0;
   background-color: var(--bg);
+  background: var(--bg) !important;
   color: var(--white);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* Отключение горизонтальной прокрутки */
+  overflow-x: hidden;
+  /* Для плавного скролла на iOS */
+  -webkit-overflow-scrolling: touch;
+
 }
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  overflow-y: hidden;
+}
+
 
 
 h1,
@@ -121,6 +139,7 @@ button {
 button:active {
   opacity: 0.8;
 }
+
 
 .container {
   display: flex;
