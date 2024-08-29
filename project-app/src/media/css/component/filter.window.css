@@ -1,4 +1,5 @@
 .filter_window {
+  touch-action: none;
   display: none;
   flex-direction: column;
   justify-content: center;
