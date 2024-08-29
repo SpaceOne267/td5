@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // img
-import ImgCup from "../media/svg/cup.svg";
+import ImgCup from "../media/img/menu/cup.png";
 const CardUserRate = () => {
   const navigate = useNavigate();
   function clickHandler() {
